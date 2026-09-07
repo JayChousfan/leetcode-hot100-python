@@ -1,0 +1,8 @@
+"""LeetCode 283. 移动零｜难度：简单
+函数：fun(nums) -> None"""
+# TODO: 在这里写出完整的 def fun(...): 函数
+if __name__ == "__main__":
+    nums1 = [0, 1, 0, 3, 12]
+    fun(nums1)
+    assert nums1 == [1, 3, 12, 0, 0], "示例1失败"
+    print("✅ E16 移动零 通过！")

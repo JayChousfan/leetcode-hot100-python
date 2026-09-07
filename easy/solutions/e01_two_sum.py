@@ -1,0 +1,20 @@
+"""LeetCode 1. 两数之和 (Two Sum) — Hot 100
+难度：简单
+哈希表记录已出现数字：C++ unordered_map → Python dict。"""
+
+
+def fun(nums: list[int], target: int) -> list[int]:
+    """一次遍历哈希表。时间 O(n)，空间 O(n)。"""
+    mp: dict[int, int] = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in mp:
+            return [mp[complement], i]
+        mp[num] = i
+    return []
+
+
+if __name__ == "__main__":
+    assert fun([2, 7, 11, 15], 9) == [0, 1], "示例1失败"
+    assert fun([3, 3], 6) == [0, 1], "重复元素测试失败"
+    print("✅ E01 两数之和 全部测试通过")

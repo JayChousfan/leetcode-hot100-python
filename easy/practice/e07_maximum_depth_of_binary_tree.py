@@ -1,0 +1,6 @@
+"""LeetCode 104. 二叉树的最大深度｜难度：简单
+函数：fun(root) -> int"""
+# TODO: 在这里写出完整的 def fun(...): 函数
+if __name__ == "__main__":
+    assert fun(None) == 0, "空树测试失败"
+    print("✅ E07 二叉树的最大深度 通过！")
