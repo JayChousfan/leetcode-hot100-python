@@ -3,6 +3,12 @@
 示例：[4,1,2,1,2] → 4
 函数：fun(nums)"""
 # TODO: 在这里写出完整的 def fun(...): 函数
+def fun(nums):
+    result = 0
+    for num in nums:
+        result ^= num
+    return result
+
 if __name__ == "__main__":
     assert fun([4, 1, 2, 1, 2]) == 4, "示例1失败"
     print("✅ E09 只出现一次的数字 通过！")
