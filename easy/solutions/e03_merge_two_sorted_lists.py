@@ -25,23 +25,13 @@ def fun(list1, list2):
     return dummy.next
 
 
-def build_list(nums):
-    dummy = ListNode()
-    cur = dummy
-    for num in nums:
-        cur.next = ListNode(num)
-        cur = cur.next
-    return dummy.next
-
-
-def to_list(head):
+if __name__ == "__main__":
+    list1 = ListNode(1, ListNode(2, ListNode(4)))
+    list2 = ListNode(1, ListNode(3, ListNode(4)))
+    head = fun(list1, list2)
     result = []
     while head:
         result.append(head.val)
         head = head.next
-    return result
-
-
-if __name__ == "__main__":
-    assert to_list(fun(build_list([1, 2, 4]), build_list([1, 3, 4]))) == [1, 1, 2, 3, 4, 4], "示例1失败"
+    assert result == [1, 1, 2, 3, 4, 4], "示例1失败"
     print("✅ E03 合并两个有序链表 全部测试通过")
