@@ -3,9 +3,9 @@
 哈希表记录已出现数字：C++ unordered_map → Python dict。"""
 
 
-def fun(nums: list[int], target: int) -> list[int]:
+def fun(nums, target):
     """一次遍历哈希表。时间 O(n)，空间 O(n)。"""
-    mp: dict[int, int] = {}
+    mp = {}
     for i, num in enumerate(nums):
         complement = target - num
         if complement in mp:

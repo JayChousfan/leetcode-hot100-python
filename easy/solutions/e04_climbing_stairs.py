@@ -3,7 +3,7 @@
 多变量赋值可简洁滚动更新两个 DP 状态。"""
 
 
-def fun(n: int) -> int:
+def fun(n):
     """滚动动态规划。时间 O(n)，空间 O(1)。"""
     prev, cur = 1, 1
     for _ in range(n):

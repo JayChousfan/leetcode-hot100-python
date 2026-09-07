@@ -3,13 +3,13 @@
 利用元素绝对值定位下标，再用负号原地标记已经出现。"""
 
 
-def fun(nums: list[int]) -> list[int]:
+def fun(nums):
     """原地负号标记出现过的数字。时间 O(n)，空间 O(1)。"""
     for num in nums:
         i = abs(num) - 1
         nums[i] = -abs(nums[i])
 
-    result: list[int] = []
+    result = []
     for i, num in enumerate(nums):
         if num > 0:
             result.append(i + 1)

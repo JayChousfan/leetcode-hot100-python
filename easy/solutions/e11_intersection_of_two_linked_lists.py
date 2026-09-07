@@ -9,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def fun(headA: ListNode, headB: ListNode) -> ListNode:
+def fun(headA, headB):
     """双指针交换起点以消除长度差。时间 O(m+n)，空间 O(1)。"""
     cur_a, cur_b = headA, headB
     while cur_a is not cur_b:

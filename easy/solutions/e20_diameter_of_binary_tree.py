@@ -10,11 +10,11 @@ class TreeNode:
         self.right = right
 
 
-def fun(root: TreeNode) -> int:
+def fun(root):
     """后序遍历计算高度并更新直径。时间 O(n)，空间 O(h)。"""
     max_len = 0
 
-    def depth(node: TreeNode) -> int:
+    def depth(node):
         nonlocal max_len
         if not node:
             return 0

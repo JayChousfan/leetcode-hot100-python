@@ -3,7 +3,7 @@
 先异或找出不同位，再用 bin().count("1") 统计二进制 1 的数量。"""
 
 
-def fun(x: int, y: int) -> int:
+def fun(x, y):
     """统计 x ^ y 中二进制 1 的个数。时间 O(1)，空间 O(1)。"""
     return bin(x ^ y).count("1")
 

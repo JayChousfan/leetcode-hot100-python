@@ -10,7 +10,7 @@ class TreeNode:
         self.right = right
 
 
-def fun(root1: TreeNode, root2: TreeNode) -> TreeNode:
+def fun(root1, root2):
     """将对应节点值相加并递归合并左右子树。时间 O(m+n)，空间 O(h)。"""
     if not root1:
         return root2

@@ -10,7 +10,7 @@ class TreeNode:
         self.right = right
 
 
-def fun(root: TreeNode) -> TreeNode:
+def fun(root):
     """递归交换每个节点的左右孩子。时间 O(n)，空间 O(h)。"""
     if not root:
         return None

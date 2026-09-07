@@ -3,7 +3,7 @@
 Boyer-Moore 投票：相同加票，不同抵消。"""
 
 
-def fun(nums: list[int]) -> int:
+def fun(nums):
     """维护候选人与票数。时间 O(n)，空间 O(1)。"""
     candidate = 0
     count = 0

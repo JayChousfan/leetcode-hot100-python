@@ -3,7 +3,7 @@
 双指针交换：C++ swap(a, b) → Python a, b = b, a。"""
 
 
-def fun(nums: list[int]) -> None:
+def fun(nums):
     """slow/fast 原地交换。时间 O(n)，空间 O(1)。"""
     slow = 0
     for fast in range(len(nums)):

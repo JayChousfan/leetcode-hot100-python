@@ -10,7 +10,7 @@ class TreeNode:
         self.right = right
 
 
-def fun(root: TreeNode) -> int:
+def fun(root):
     """递归计算左右子树最大深度。时间 O(n)，空间 O(h)。"""
     if not root:
         return 0

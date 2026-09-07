@@ -9,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def fun(head: ListNode) -> bool:
+def fun(head):
     """比较前半段与反转后的后半段。时间 O(n)，空间 O(1)。"""
     slow = fast = head
     while fast and fast.next:
@@ -30,6 +30,6 @@ def fun(head: ListNode) -> bool:
 
 if __name__ == "__main__":
     head1 = ListNode(1, ListNode(2, ListNode(2, ListNode(1))))
-    assert fun(head1) is True, "示例1失败"
-    assert fun(ListNode(1, ListNode(2))) is False, "非回文测试失败"
+    assert fun(head1), "示例1失败"
+    assert not fun(ListNode(1, ListNode(2))), "非回文测试失败"
     print("✅ E15 回文链表 全部测试通过")

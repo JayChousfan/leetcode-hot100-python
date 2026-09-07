@@ -9,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def fun(head: ListNode) -> ListNode:
+def fun(head):
     """prev/cur 逐个反转。时间 O(n)，空间 O(1)。"""
     prev = None
     cur = head

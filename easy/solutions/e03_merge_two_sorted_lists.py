@@ -9,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def fun(list1: ListNode, list2: ListNode) -> ListNode:
+def fun(list1, list2):
     """依次连接较小节点。时间 O(m+n)，空间 O(1)。"""
     dummy = ListNode()
     cur = dummy
@@ -23,7 +23,7 @@ def fun(list1: ListNode, list2: ListNode) -> ListNode:
     return dummy.next
 
 
-def build_list(nums: list[int]) -> ListNode:
+def build_list(nums):
     dummy = ListNode()
     cur = dummy
     for num in nums:
@@ -32,7 +32,7 @@ def build_list(nums: list[int]) -> ListNode:
     return dummy.next
 
 
-def to_list(head: ListNode) -> list[int]:
+def to_list(head):
     result = []
     while head:
         result.append(head.val)

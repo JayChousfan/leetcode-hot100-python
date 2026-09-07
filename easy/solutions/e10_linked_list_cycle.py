@@ -9,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def fun(head: ListNode) -> bool:
+def fun(head):
     """Floyd 快慢指针判环。时间 O(n)，空间 O(1)。"""
     slow = fast = head
     while fast and fast.next:
@@ -23,6 +23,6 @@ def fun(head: ListNode) -> bool:
 if __name__ == "__main__":
     head1 = ListNode(1, ListNode(2))
     head1.next.next = head1
-    assert fun(head1) is True, "有环测试失败"
-    assert fun(ListNode(1)) is False, "无环测试失败"
+    assert fun(head1), "有环测试失败"
+    assert not fun(ListNode(1)), "无环测试失败"
     print("✅ E10 环形链表 全部测试通过")

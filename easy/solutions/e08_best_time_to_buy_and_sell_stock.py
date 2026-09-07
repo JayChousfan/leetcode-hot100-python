@@ -3,7 +3,7 @@
 float('inf') 表示正无穷，适合初始化最低价格。"""
 
 
-def fun(prices: list[int]) -> int:
+def fun(prices):
     """扫描最低买入价并更新最大利润。时间 O(n)，空间 O(1)。"""
     min_price = float("inf")
     max_profit = 0

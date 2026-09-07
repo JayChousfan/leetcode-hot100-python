@@ -10,9 +10,9 @@ class TreeNode:
         self.right = right
 
 
-def fun(root: TreeNode) -> bool:
+def fun(root):
     """递归判断左右子树是否互为镜像。时间 O(n)，空间 O(h)。"""
-    def check(left: TreeNode, right: TreeNode) -> bool:
+    def check(left, right):
         if not left or not right:
             return left is right
         return left.val == right.val and check(left.left, right.right) and check(left.right, right.left)
@@ -22,5 +22,5 @@ def fun(root: TreeNode) -> bool:
 
 if __name__ == "__main__":
     root1 = TreeNode(1, TreeNode(2), TreeNode(2))
-    assert fun(root1) is True, "示例1失败"
+    assert fun(root1), "示例1失败"
     print("✅ E06 对称二叉树 全部测试通过")

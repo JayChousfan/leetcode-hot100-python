@@ -10,10 +10,10 @@ class TreeNode:
         self.right = right
 
 
-def fun(root: TreeNode) -> list[int]:
+def fun(root):
     """显式栈模拟中序遍历。时间 O(n)，空间 O(h)。"""
-    result: list[int] = []
-    stack: list[TreeNode] = []
+    result = []
+    stack = []
     cur = root
     while cur or stack:
         while cur:

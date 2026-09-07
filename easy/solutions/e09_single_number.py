@@ -3,7 +3,7 @@
 异或运算 ^：相同数字抵消，0 ^ x = x。"""
 
 
-def fun(nums: list[int]) -> int:
+def fun(nums):
     """异或全部元素。时间 O(n)，空间 O(1)。"""
     result = 0
     for num in nums:
