@@ -1,6 +1,8 @@
 """LeetCode 21. 合并两个有序链表 (Merge Two Sorted Lists) — Hot 100
 难度：简单
-Python 对象引用对应 C++ 指针，dummy 简化头节点处理。"""
+题目：把两个升序链表合并成一个新的升序链表。
+示例：[1,2,4], [1,3,4] → [1,1,2,3,4,4]
+思路：用 dummy 节点依次连接较小节点。"""
 
 
 class ListNode:

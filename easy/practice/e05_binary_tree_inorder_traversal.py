@@ -1,5 +1,7 @@
 """LeetCode 94. 二叉树的中序遍历｜难度：简单
-函数：fun(root) -> list[int]"""
+题目：按“左子树、根节点、右子树”的顺序遍历二叉树。
+示例：[1,null,2,3] → [1,3,2]
+函数：fun(root)"""
 # TODO: 在这里写出完整的 def fun(...): 函数
 if __name__ == "__main__":
     assert fun(None) == [], "空树测试失败"

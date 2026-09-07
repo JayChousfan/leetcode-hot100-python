@@ -1,6 +1,8 @@
 """LeetCode 20. 有效的括号 (Valid Parentheses) — Hot 100
 难度：简单
-Python list 的 append()/pop() 可直接实现栈。"""
+题目：判断字符串中的括号是否全部正确配对。
+示例："()[]{}" → True
+思路：用 list 的 append()/pop() 实现栈。"""
 
 
 def fun(s):

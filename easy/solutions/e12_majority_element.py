@@ -1,6 +1,8 @@
 """LeetCode 169. 多数元素 (Majority Element) — Hot 100
 难度：简单
-Boyer-Moore 投票：相同加票，不同抵消。"""
+题目：找出数组中出现次数超过一半的元素。
+示例：[3,2,3] → 3
+思路：Boyer-Moore 投票，相同加票，不同抵消。"""
 
 
 def fun(nums):

@@ -1,6 +1,8 @@
 """LeetCode 94. 二叉树的中序遍历 (Binary Tree Inorder Traversal) — Hot 100
 难度：简单
-Python list 的 append()/pop() 可直接作为栈。"""
+题目：按“左子树、根节点、右子树”的顺序遍历二叉树。
+示例：[1,null,2,3] → [1,3,2]
+思路：用 list 模拟栈进行迭代遍历。"""
 
 
 class TreeNode:

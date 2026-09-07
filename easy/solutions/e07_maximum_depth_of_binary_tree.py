@@ -1,6 +1,8 @@
 """LeetCode 104. 二叉树的最大深度 (Maximum Depth of Binary Tree) — Hot 100
 难度：简单
-递归终止条件对应空节点，左右子树结果取 max。"""
+题目：计算二叉树从根节点到最远叶子节点的深度。
+示例：[3,9,20,null,null,15,7] → 3
+思路：递归计算左右子树深度并取较大值。"""
 
 
 class TreeNode:
